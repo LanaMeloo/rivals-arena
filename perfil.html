@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Perfil | RIVALS ARENA</title>
+    <link rel="icon" href="images/logo-simbolo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="perfil">
+    <header id="site-header"></header>
+    <main>
+        <section>
+            <div class="wrap">
+                <div class="row"><span class="av" id="av" style="width:90px;height:90px;font-size:2.4rem"
+                        aria-hidden="true"></span>
+                    <div>
+                        <h1 id="p-nome" style="font-size:2.4rem"></h1>
+                        <p class="muted"><span id="p-nick"></span> · Jogo favorito: <span id="p-jogo"></span></p>
+                    </div><button class="btn ghost" id="editar">Editar perfil</button>
+                </div>
+                <form id="ed" hidden class="panel" style="margin-top:16px">
+                    <div class="row">
+                        <div><label for="e-nome">Nome</label><input id="e-nome"></div>
+                        <div><label for="e-nick">Nickname</label><input id="e-nick"></div>
+                    </div><button class="btn">Salvar</button>
+                </form>
+                <div class="tabs" id="tabs" role="tablist"><button class="on" role="tab" aria-selected="true"
+                        data-a="a1">Visão geral</button><button role="tab" aria-selected="false"
+                        data-a="a2">Partidas</button><button role="tab" aria-selected="false"
+                        data-a="a3">Conquistas</button></div>
+                <div class="aba" id="a1">
+                    <div class="stats" style="margin:0">
+                        <div><b>27</b>nível</div>
+                        <div><b>2450</b>pontos</div>
+                        <div><b>87</b>vitórias</div>
+                        <div><b>32</b>derrotas</div>
+                    </div>
+                    <p class="demo">Valores de demonstração.</p>
+                </div>
+                <div class="aba" id="a2" hidden>
+                    <div class="tbl">
+                        <table>
+                            <tr>
+                                <th>Partida</th>
+                                <th>Resultado</th>
+                            </tr>
+                            <tr>
+                                <td>Nova Five x Rushers</td>
+                                <td>Vitória</td>
+                            </tr>
+                            <tr>
+                                <td>Void Squad x Nova Five</td>
+                                <td>Derrota</td>
+                            </tr>
+                            <tr>
+                                <td>Phantom x Nova Five</td>
+                                <td>Vitória</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="aba" id="a3" hidden>
+                    <div class="grid">
+                        <div class="card">
+                            <h3>Primeira vitória</h3>
+                        </div>
+                        <div class="card">
+                            <h3>10 partidas seguidas</h3>
+                        </div>
+                        <div class="card">
+                            <h3>Campeão de demonstração</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

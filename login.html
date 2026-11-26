@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Entrar | RIVALS ARENA</title>
+    <link rel="icon" href="images/logo-simbolo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="login">
+    <header id="site-header"></header>
+    <main>
+        <div class="auth">
+            <div class="panel"><img class="big" src="images/logo-nome.png" alt="RIVALS ARENA">
+                <h2>Entrar</h2>
+                <form id="f" novalidate>
+                    <div><label for="email">E-mail</label><input id="email" type="email" autocomplete="email"></div>
+                    <div><label for="senha">Senha</label>
+                        <div class="row"><input id="senha" type="password" autocomplete="current-password"><button
+                                type="button" class="btn sm ghost" id="ver">Mostrar</button></div>
+                    </div>
+                    <label><input type="checkbox" id="lembrar" style="width:auto"> Manter sessão neste
+                        navegador</label><button class="btn">Entrar</button>
+                    <p id="m" role="alert"></p>
+                </form>
+                <p>Sem conta? <a href="cadastro.html"><u>Criar conta</u></a> · <a href="index.html"><u>Voltar ao
+                            início</u></a></p>
+                <p class="demo">Autenticação de demonstração, sem segurança de produção. Só entra quem se cadastrou
+                    aqui.</p>
+            </div>
+        </div>
+    </main>
+    <footer id="site-footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

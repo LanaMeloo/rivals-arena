@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Times | RIVALS ARENA</title>
+    <link rel="icon" href="images/logo-simbolo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="times">
+    <header id="site-header"></header>
+    <main>
+        <section>
+            <div class="wrap">
+                <h1>Times</h1>
+                <p class="muted">Descubra times ou crie o seu.</p>
+                <div class="row" style="margin:20px 0"><input id="q" placeholder="Pesquisar time"
+                        aria-label="Pesquisar"><select id="jogo" aria-label="Jogo">
+                        <option value="">Todos os jogos</option>
+                        <option>Battlezone</option>
+                        <option>FIFA</option>
+                    </select></div>
+                <div class="grid" id="lista"></div>
+                <div class="panel" style="margin-top:36px">
+                    <h2>Criar time</h2>
+                    <form id="novo" novalidate>
+                        <div class="row">
+                            <div><label for="nome">Nome</label><input id="nome" name="nome"></div>
+                            <div><label for="jg">Jogo</label><select id="jg" name="jogo">
+                                    <option>Battlezone</option>
+                                    <option>FIFA</option>
+                                </select></div>
+                        </div>
+                        <div><label for="desc">Descrição</label><textarea id="desc" name="desc" rows="3"></textarea>
+                        </div><button class="btn">Criar time</button>
+                        <p id="m" role="alert"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Partidas | RIVALS ARENA</title>
+    <link rel="icon" href="images/logo-simbolo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="partidas">
+    <header id="site-header"></header>
+    <main>
+        <section>
+            <div class="wrap">
+                <h1>Partidas</h1>
+                <p class="muted">Confrontos de demonstração. Nenhuma partida é real ou ao vivo.</p>
+                <div class="row" style="margin:20px 0"><select id="jogo" aria-label="Modalidade">
+                        <option value="">Todos os jogos</option>
+                        <option>Battlezone</option>
+                        <option>FIFA</option>
+                    </select><select id="status" aria-label="Status">
+                        <option value="">Todos</option>
+                        <option value="futura">Futuras</option>
+                        <option value="andamento">Em andamento</option>
+                        <option value="encerrada">Encerradas</option>
+                    </select></div>
+                <div class="grid" id="lista"></div>
+                <div class="panel" id="det" style="margin-top:24px" aria-live="polite">
+                    <p class="muted">Escolha uma partida para ver os detalhes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

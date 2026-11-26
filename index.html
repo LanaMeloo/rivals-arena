@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Início | RIVALS ARENA</title>
+    <link rel="icon" href="images/logo-simbolo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="index">
+    <header id="site-header"></header>
+    <main>
+        <div class="hero">
+            <div class="wrap">
+                <div>
+                    <h1>Entre na <span>arena.</span></h1>
+                    <p>Encontre seus rivais, monte seu time e conquiste seu lugar entre os melhores.</p>
+                    <div class="btns"><a class="btn" href="#jogo">Jogar agora</a><a class="btn ghost"
+                            href="campeonatos.html">Explorar campeonatos</a></div>
+                </div>
+                <div class="emblem" aria-hidden="true"><i></i><i></i><i></i><img src="images/logo-completa.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="wrap stats">
+            <div><b>+12.500</b>jogadores</div>
+            <div><b>+850</b>times</div>
+            <div><b>+120</b>campeonatos</div>
+            <div><b>+5.400</b>partidas</div>
+        </div>
+        <p class="wrap demo">Números de demonstração do protótipo, não representam uma plataforma real.</p>
+        <section id="jogo">
+            <div class="wrap feature">
+                <div class="panel">
+                    <h2>Rivals: Battlezone</h2>
+                    <div class="meta"><span>ACTION</span><span>1 a 4 jogadores</span><span>Dificuldade: MÉDIA</span>
+                    </div>
+                    <p>Um jogo fictício de arena em que equipes disputam o controle do mapa em rodadas rápidas.</p><a
+                        class="btn" href="sobre.html">Conhecer o jogo</a>
+                </div>
+                <div class="panel">
+                    <h3>Rivals Click Battle</h3>
+                    <p class="muted">Rodada de 30 segundos. Clique o máximo que puder.</p>
+                    <p class="score" id="pts" aria-live="polite">0</p>
+                    <p>Tempo: <span id="tempo">30</span>s</p><button class="btn" id="atk">Atacar</button>
+                </div>
+            </div>
+        </section>
+        <section class="alt">
+            <div class="wrap">
+                <h2>Campeonatos em destaque</h2>
+                <div class="grid" id="destaques"></div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <h2>Ranking de jogadores</h2>
+                <div class="tabs" id="rk-f"><button class="on" data-k="g">Global</button><button
+                        data-k="s">Semana</button><button data-k="m">Mês</button></div>
+                <div class="tbl">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>Nickname</th>
+                            <th>Pontos</th>
+                        </tr>
+                        <tbody id="rk-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="alt">
+            <div class="wrap">
+                <h2>Times em destaque</h2>
+                <div class="grid" id="times-d"></div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <h2>Comunidade</h2>
+                <div id="feed"></div>
+                <p style="margin-top:16px"><a class="btn sm ghost" href="comunidade.html">Ver tudo</a></p>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="wrap">
+                <h2>Seu próximo desafio começa aqui.</h2>
+                <p>Crie sua conta, encontre seu time e mostre do que você é capaz.</p><br><a class="btn"
+                    href="cadastro.html">Fazer parte da arena</a>
+            </div>
+        </section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
